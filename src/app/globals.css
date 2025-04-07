@@ -23,9 +23,25 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: "Manrope", sans-serif;
+  grid-template-columns:
+    [fullbleed-start] 1fr [content] minmax(0, 1200px)
+    1fr [fullbleed-end];
 }
 
 /* Buttons */
-.one {
+/* isFilled? */
+
+button {
+  border-radius: 25px;
+}
+.primary {
   background-color: rgb(137, 196, 196);
+}
+.stroke {
+  outline: solid 1px red;
+}
+/* sizes */
+.sm {
+  padding-inline: 0.8rem;
+  padding-block: 0.8rem;
 }
