@@ -5,7 +5,7 @@ import AnimalGallery from "@/components/(global)/AnimalGallery";
 export default function Home() {
   return (
     <main>
-      <h1>Family Friends</h1>
+      <h1>Favorites</h1>
       <Slider></Slider>
       <AnimalGallery></AnimalGallery>
     </main>

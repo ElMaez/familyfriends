@@ -1,4 +1,6 @@
 import "./globals.css";
+import Header from "@/components/(global)/Header";
+import Menu from "@/components/(global)/Menu";
 
 export const metadata = {
   title: "Create Next App",
@@ -8,7 +10,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Header></Header>
+        {children}
+        <Menu></Menu>
+      </body>
     </html>
   );
 }
