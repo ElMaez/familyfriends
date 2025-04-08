@@ -23,9 +23,6 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: "Manrope", sans-serif;
-  grid-template-columns:
-    [fullbleed-start] 1fr [content] minmax(0, 1200px)
-    1fr [fullbleed-end];
 }
 
 /* Buttons */
@@ -40,5 +37,9 @@ body {
 /* sizes */
 .sm {
   padding-inline: 0.8rem;
+  padding-block: 0.8rem;
+}
+.md {
+  padding-inline: 0.8rem 1rem;
   padding-block: 0.8rem;
 }

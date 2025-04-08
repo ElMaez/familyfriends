@@ -4,7 +4,7 @@ const Button = ({ size, isfilled, isStroke, text, color, img, icon }) => {
 
   return (
     <button
-      className={`${filled} ${size} ${stroke}flex flex-row gap-2 items-center rounded-full`}
+      className={`${filled} ${size} ${stroke} flex flex-row gap-2 items-center rounded-full`}
     >
       {img}
       {text}
@@ -45,3 +45,23 @@ export default Button;
 //   ></Image>
 //     }
 //   ></Button>
+
+
+// Kopy here
+{/* <Button
+size="sm"
+isfilled={false}
+isStroke={false}
+color="primary"
+text="Like"
+icon={<GoBell size={25} />}
+img={
+ <Image
+   className="rounded-full"
+   width={50}
+   height={50}
+   alt="det er en kat"
+   src=""
+ ></Image>
+   }
+ ></Button> */}
