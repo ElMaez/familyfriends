@@ -5,7 +5,8 @@ import Placeholder from "../../app/img/download.png"
 import Button from "./Button";
 
 const Slider = () => {
-  return <section className="w-[800px] flex flex-row gap-4 pt-4">
+  return <section className="pt-4 pb-6 overflow-x-scroll">
+    <div className="flex flex-row gap-4 w-[500px]">
     <Button
   size="md"
   isfilled={true}
@@ -56,7 +57,7 @@ const Slider = () => {
    ></Image>
      }
      
-   ></Button>
+   ></Button></div>
    </section>;
 };
 

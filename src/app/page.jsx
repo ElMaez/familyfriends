@@ -13,7 +13,7 @@ export default async function Home() {
   console.log(animals);
 
   return (
-    <main className="overflow-x-hidden">
+    <main className="">
       <Slider></Slider>
       <AnimalGallery></AnimalGallery>
     </main>

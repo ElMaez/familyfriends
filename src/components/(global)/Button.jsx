@@ -1,10 +1,10 @@
-const Button = ({ size, isfilled, isStroke, text, color, img, icon }) => {
+const Button = ({ styling, size, isfilled, isStroke, text, color, img, icon }) => {
   let filled = isfilled ? `${color}` : "";
   let stroke = isStroke ? "border-[#CACACD] border-2" : "";
 
   return (
     <button
-      className={`${filled} ${size} ${stroke} flex flex-row gap-2 items-center rounded-full`}
+      className={`${filled} ${size} ${stroke} ${styling} flex flex-row gap-2 items-center rounded-full`}
     >
       {img}
       {text}
@@ -49,6 +49,7 @@ export default Button;
 
 // Kopy here
 {/* <Button
+styling="col-2 row-1 justify-self-end"
 size="sm"
 isfilled={false}
 isStroke={false}
