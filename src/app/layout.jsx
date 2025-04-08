@@ -10,7 +10,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body suppressHydrationWarning className=" bg-amber-50 grid grid-rows-3">
+      <body suppressHydrationWarning className=" bg-amber-50 grid">
         <Header></Header>
         {children}
         <Menu></Menu>
