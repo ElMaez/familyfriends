@@ -4,7 +4,7 @@ import { GoBell } from "react-icons/go";
 
 const Header = () => {
   return (
-    <header className="flex flex-row justify-between pr-4 pt-4 font-bold">
+    <header className="col-[content] row-[header] flex flex-row justify-between pr-4 pt-4 font-bold">
       <h2 className="self-center">FamilyFriends</h2>
       <Button
         size="sm"
