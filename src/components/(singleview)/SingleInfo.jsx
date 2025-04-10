@@ -4,10 +4,13 @@ import LabelList from "./LabelList";
 const SingleInfo = () => {
   return (
     <section>
-      <h1>Single Info</h1>
       <LabelList></LabelList>
-      <p>tekst er her</p>
-      <p>tekst er her</p>
+      <p>
+        Den venligste Samojed, vi nogensinde har mødt. Elsker at lege med bolde
+        og er venlig over for andre dyr. På trods af sin hvide pels elsker den
+        regn og vandpytter.
+      </p>
+      <p>Opdateret den 13. juli.</p>
       <Button></Button>
     </section>
   );

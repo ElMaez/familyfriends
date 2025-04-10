@@ -5,11 +5,19 @@ import Button from "@/components/(global)/Button";
 
 export default function Home() {
   return (
-    <main>
-      <h1>Single View</h1>
+    <main className="">
       <ViewCard></ViewCard>
       <SingleInfo></SingleInfo>
-      <Button></Button>
+      <Button
+        styling="w-full justify-center"
+        size="sm"
+        isfilled={true}
+        isStroke={false}
+        color="primary"
+        text="Adopter Samojed Willie"
+        icon=""
+        img=""
+      ></Button>
     </main>
   );
 }

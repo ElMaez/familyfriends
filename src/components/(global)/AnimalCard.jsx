@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import Placeholder from "../../app/img/download.png";
 import { CiStar } from "react-icons/ci";
@@ -6,7 +7,9 @@ import Button from "./Button";
 
 const AnimalCard = () => {
   return (
-    <article className="col-span-1 grid card bg-amber-300 rounded-3xl shadow-slate-800 shadow-md/30">
+    <article className="relative col-span-1 grid card bg-[#FFFFFF] rounded-3xl shadow-slate-800 shadow-md/5">
+      <Link id="link" href={"/singleView"}></Link>
+
       <div className="w-full col-[content] grid grid-rows-2 grid-cols-2 rounded-3xl">
         <Image
           className="col-span-full row-span-full rounded-3xl"
@@ -20,6 +23,7 @@ const AnimalCard = () => {
           isStroke={false}
           color="opaque"
           icon={<CiStar size={25} />}
+          img=""
         ></Button>
       </div>
       <section className="col-[content] grid grid-cols-2 grid-rows-3 p-4">

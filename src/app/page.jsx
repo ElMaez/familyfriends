@@ -1,4 +1,6 @@
 import Image from "next/image";
+
+import Menu from "@/components/(global)/Menu";
 import Slider from "@/components/(global)/Slider";
 import AnimalGallery from "@/components/(global)/AnimalGallery";
 import RemoteImage from "@/components/(api)/Sandbox";
@@ -13,9 +15,10 @@ export default async function Home() {
   console.log(animals);
 
   return (
-    <main className="col-[content] row-[main]">
+    <main className="h-svh">
       <Slider></Slider>
       <AnimalGallery></AnimalGallery>
+      <Menu></Menu>
     </main>
   );
 }

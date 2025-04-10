@@ -8,11 +8,13 @@ const Slider = () => {
     <section className="pt-4 overflow-x-scroll ">
       <div className="flex flex-row gap-4 w-[500px]">
         <Button
+          styling=""
           size="md"
           isfilled={true}
           isStroke={false}
           color="primary"
           text="Alle"
+          icon=""
           img={
             <Image
               className="rounded-full"
@@ -24,11 +26,13 @@ const Slider = () => {
           }
         ></Button>
         <Button
+          styling=""
           size="md"
           isfilled={false}
           isStroke={true}
           color=""
           text="Katte"
+          icon=""
           img={
             <Image
               className="rounded-full"
@@ -40,11 +44,13 @@ const Slider = () => {
           }
         ></Button>
         <Button
+          styling=""
           size="md"
           isfilled={false}
           isStroke={true}
           color="primary"
           text="Hunde"
+          icon=""
           img={
             <Image
               className="rounded-full"
