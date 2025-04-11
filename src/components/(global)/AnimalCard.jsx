@@ -5,10 +5,11 @@ import Placeholder from "../../app/img/download.png";
 import { CiStar } from "react-icons/ci";
 import Button from "./Button";
 
-const AnimalCard = () => {
+const AnimalCard = ({ id }) => {
+  console.log("animal: ", id);
   return (
     <article className="relative col-span-1 grid card bg-[#FFFFFF] rounded-3xl shadow-slate-800 shadow-md/5">
-      <Link id="link" href={"/singleView"}></Link>
+      <Link id="link" href={`/singleView/${id}`}></Link>
 
       <div className="w-full col-[content] grid grid-rows-2 grid-cols-2 rounded-3xl">
         <Image
