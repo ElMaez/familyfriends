@@ -1,3 +1,6 @@
+"use client";
+import useStore from "@/lib/store";
+
 const Button = ({
   styling,
   size,
@@ -10,11 +13,14 @@ const Button = ({
 }) => {
   let filled = isfilled ? `${color}` : "";
   let stroke = isStroke ? "border-[#CACACD] border-2" : "";
+  const { messages } = useStore();
+  console.log("Bell: ", messages);
 
   return (
     <button
       className={`${filled} ${size} ${stroke} ${styling} w-fit h-fit flex flex-row gap-2 items-center rounded-full`}
     >
+      {messages > 0 ? "active" : "notactive"}
       {img}
       {text}
       {icon}
