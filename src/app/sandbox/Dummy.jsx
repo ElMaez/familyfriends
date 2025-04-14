@@ -2,7 +2,7 @@
 import useStore from "../sandbox/store/zusstandExemple";
 
 const Dummy = () => {
-  const { messages } = () => useStore();
+  const { messages } = useStore();
   console.log("Bell: ", messages);
   return <>{messages > 0 ? "active" : "notactive"}</>;
 };
