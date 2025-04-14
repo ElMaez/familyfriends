@@ -5,12 +5,18 @@ import Placeholder from "../../app/img/download.png";
 import { CiStar } from "react-icons/ci";
 import Button from "./Button";
 
-const AnimalCard = ({ id }) => {
+const AnimalCard = ({
+  id,
+  name,
+  age,
+  breeds,
+  contact,
+  primary_photo_cropped,
+}) => {
   console.log("animal: ", id);
   return (
-    <article className="relative col-span-1 grid card bg-[#FFFFFF] rounded-3xl shadow-slate-800 shadow-md/5">
+    <article className="relative card bg-[#FFFFFF] rounded-3xl shadow-slate-800 shadow-md/5">
       <Link id="link" href={`/singleView/${id}`}></Link>
-
       <div className="w-full col-[content] grid grid-rows-2 grid-cols-2 rounded-3xl">
         <Image
           className="col-span-full row-span-full rounded-3xl"
@@ -24,14 +30,16 @@ const AnimalCard = ({ id }) => {
           isStroke={false}
           color="opaque"
           icon={<CiStar size={25} />}
-          img=""
+          img={`${primary_photo_cropped.medium}`}
         ></Button>
       </div>
-      <section className="col-[content] grid grid-cols-2 grid-rows-3 p-4">
-        <h2 className="col-1 row-1 font-bold">Harry</h2>
-        <p className="col-2 row-1 justify-self-end">Young</p>
-        <p className="col-1 row-2">Yorkshire</p>
-        <p className="col-1 row-3">Terrier</p>
+      <section className="col-[content] p-2">
+        <header className="flex justify-between">
+          <h2 className="font-bold truncate">{name}</h2>
+          <p>{age}</p>
+        </header>
+        <p>{contact.address.city}</p>
+        <p>{breeds?.primary}</p>
       </section>
     </article>
   );
