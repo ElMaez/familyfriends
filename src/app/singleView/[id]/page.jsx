@@ -3,18 +3,23 @@ import ViewCard from "@/components/(singleview)/ViewCard";
 import SingleInfo from "@/components/(singleview)/SingleInfo";
 import Button from "@/components/(global)/Button";
 
-export default function Home() {
+import { getSingleAnimal } from "@/lib/api";
+
+export default async function Home({ params }) {
+  const { id } = await params;
+  const animal = await getSingleAnimal(id);
+  console.log("animal params: ", animal, id);
   return (
     <main className="">
-      <ViewCard></ViewCard>
-      <SingleInfo></SingleInfo>
+      <ViewCard {...animal} />
+      <SingleInfo {...animal} animaldata={animal} />
       <Button
         styling="w-full justify-center"
         size="sm"
         isfilled={true}
         isStroke={false}
         color="primary"
-        text="Adopter Samojed Willie"
+        text={`Adopter ${animal.name}`}
         icon=""
         img=""
       ></Button>

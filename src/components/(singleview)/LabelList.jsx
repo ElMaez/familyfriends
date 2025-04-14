@@ -3,10 +3,10 @@ import Image from "next/image";
 import Placeholder from "../../app/img/download.png";
 import Button from "../(global)/Button";
 
-const LabelList = () => {
+const LabelList = ({ breeds, age, type, gender, name }) => {
   return (
     <div>
-      <h2>Samojed Willie</h2>
+      <h2>{name}</h2>
       <div className=" flex flex-row justify-between">
         <Button
           styling="col-1 row-2 justify-self-start self-end p-4"
@@ -14,7 +14,7 @@ const LabelList = () => {
           isfilled={true}
           isStroke={false}
           color="primary"
-          text="Dog"
+          text={type}
           icon=""
           img=""
         ></Button>
@@ -24,7 +24,7 @@ const LabelList = () => {
           isfilled={true}
           isStroke={false}
           color="primary"
-          text="Male"
+          text={gender}
           icon=""
           img=""
         ></Button>
@@ -34,7 +34,7 @@ const LabelList = () => {
           isfilled={true}
           isStroke={false}
           color="primary"
-          text="Young"
+          text={age}
           icon=""
           img=""
         ></Button>
@@ -44,7 +44,7 @@ const LabelList = () => {
           isfilled={true}
           isStroke={false}
           color="primary"
-          text="Great Dane"
+          text={breeds?.primary}
           icon=""
           img=""
         ></Button>

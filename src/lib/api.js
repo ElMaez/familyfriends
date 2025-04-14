@@ -21,5 +21,5 @@ export async function getSingleAnimal(id) {
   const animals = await data.json();
   console.log("animals: ", animals);
 
-  return animals.animals;
+  return animals.animal;
 }

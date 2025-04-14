@@ -19,8 +19,10 @@ const AnimalCard = ({
       <Link id="link" href={`/singleView/${id}`}></Link>
       <div className="w-full col-[content] grid grid-rows-2 grid-cols-2 rounded-3xl">
         <Image
-          className="col-span-full row-span-full rounded-3xl"
-          src={Placeholder}
+          className=" col-span-full row-span-full rounded-3xl"
+          width={500}
+          height={500}
+          src={primary_photo_cropped?.medium || Placeholder}
           alt="Placeholder"
         ></Image>
         <Button
@@ -30,7 +32,7 @@ const AnimalCard = ({
           isStroke={false}
           color="opaque"
           icon={<CiStar size={25} />}
-          img={`${primary_photo_cropped.medium}`}
+          img=""
         ></Button>
       </div>
       <section className="col-[content] p-2">
